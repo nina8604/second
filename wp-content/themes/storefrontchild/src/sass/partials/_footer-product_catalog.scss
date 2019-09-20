@@ -1,0 +1,454 @@
+//footer {
+.footer-catalog {
+  //float: none;
+  claer: both;
+  .footer-carousel-inner {
+    .footer-carousel-item {
+      //position: relative;
+      .background {
+        width: 100%;
+        min-height: 259px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+        //@media screen and (max-width: 1600px){
+        //  min-height: 225px;
+        //  background-size: contain;
+        //}
+        @media screen and (max-width: 1200px){
+          min-height: 225px;
+          background-size: contain;
+        }
+        @media screen and (max-width: 992px){
+          min-height: 190px;
+        }
+        @media screen and (max-width: 768px){
+          min-height: 145px;
+        }
+        @media screen and (max-width: 640px){
+          min-height: 122px;
+          background-size: cover;
+          margin-left: -15px;
+        }
+        //@media screen and (max-width: 414px){
+        //  min-height: 81px;
+        //}
+        //@media screen and (max-width: 320px){
+        //  min-height: 61px;
+        //}
+
+      }
+    }
+  }
+  .brands-carousel-inner {
+    width: 80%;
+    margin:0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media screen and (max-width: 1200px){
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    @media screen and (max-width: 1200px){
+      padding-top: 31px;
+      padding-bottom: 50px;
+    }
+    .slick-next {
+      right: -55px;
+      @media screen and (max-width: 640px){
+        right: -22px;
+      }
+      @media screen and (max-width: 500px){
+        right: -16px;
+      }
+    }
+    .slick-prev {
+      left: -55px;
+      @media screen and (max-width: 640px){
+        left: -32px;
+      }
+    }
+    .slick-prev, .slick-next {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      z-index: 11;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: transparent;
+      border: none;
+      outline: none;
+      background: transparent;
+      @media screen and (max-width: 768px){
+        top: 44%;
+      }
+      &:active, &:hover, &:focus {
+        color: $blue-dark;
+        border: none;
+        outline: none;
+        background-color: transparent;
+      }
+    }
+    .slick-prev:before, .slick-next:before {
+      font-family: "Font Awesome 5 Free";
+      font-size: 25px;
+      line-height: 1;
+      opacity: .75;
+      color: $dark_color;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 10px;
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
+      &:active, &:hover, &:focus {
+        color: $blue-dark;
+      }
+    }
+    .slick-next:before {
+      content: '\f054';
+      //content: '→';
+    }
+
+    .slick-prev:before {
+      content: '\f053';
+      //content: '←';
+    }
+    .brands-carousel-item {
+      padding-left: 36px;
+      padding-right: 20px;
+      @media screen and (max-width: 500px){
+        padding-left: 20px;
+      }
+      //position: relative;
+      .background {
+        width: auto;
+        height: auto;
+        min-height: 62px;
+        background-repeat: no-repeat;
+        //background-size: auto auto;
+        background-size: contain;
+        background-position: center;
+        @media screen and (max-width: 1200px){
+          min-height: 62px;
+        }
+      }
+    }
+  }
+  .footer-bottom{
+    min-height: 240px;
+    width: 100%;
+    //font-size: 0;
+    display: flex;
+    background-color: #363636;
+    @media screen and (max-width: 1200px){
+      min-height: 225px;
+    }
+    @media screen and (max-width: 768px){
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom-left{
+      width: 32.4%;
+      display: block;
+      padding-left: 125px;
+      @media screen and (max-width: 992px){
+        width: 30%;
+        padding-left: 25px;
+      }
+      @media screen and (max-width: 768px){
+        width: 25%;
+      }
+      @media screen and (max-width: 640px){
+        width: 35%;
+        padding-left: 50px;
+      }
+      @media screen and (max-width: 414px){
+        padding-left: 15px;
+      }
+      .modax {
+        padding-top: 37px;
+      }
+
+      .social_icons {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 53px;
+        width: 46%;
+        @media screen and (max-width: 414px){
+          margin-top: 17px;
+        }
+        @media screen and (max-width: 640px){
+          width: 75%;
+        }
+        @media screen and (max-width: 414px){
+          margin-top: 0;
+          width: 100%;
+        }
+        a {
+          max-width: 56px;
+          max-height: 56px;
+          color: #999;
+          font-size: 14px;
+          @media screen and (max-width: 414px){
+            font-size: 10px;
+            padding: 8px 0;
+            margin: 3px;
+            max-width: 46px;
+            max-height: 56px;
+          }
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+    .right-bottom-right {
+      display: none;
+      @media screen and (max-width: 640px){
+        width: 65%;
+        display: inline-block;
+        padding-left: 50px;
+        padding-top: 37px;
+      }
+      @media screen and (max-width: 414px){
+        padding-left: 10px;
+      }
+      h1 {
+        font-family: $font-montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        letter-spacing: 1px;
+        @media screen and (max-width: 1080px){
+          font-size: 10px;
+        }
+      }
+      div {
+        font-family: $font-montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        padding-top: 21px;
+        @media screen and (max-width: 1080px){
+          font-size: 10px;
+        }
+        @media screen and (max-width: 640px){
+          padding-top: 0;
+        }
+      }
+      .bank-cards {
+        padding-top: 38px;
+        display: flex;
+        justify-content: space-between;
+        width: 97%;
+
+        @media screen and (max-width: 1350px){
+          width: 76%;
+        }
+        @media screen and (max-width: 992px){
+          width: 90%;
+        }
+        @media screen and (max-width: 640px){
+          width: 75%;
+          padding-top: 9px;
+        }
+        @media screen and (max-width: 640px){
+          width: 90%;
+        }
+      }
+    }
+    .footer-bottom-center {
+      width: 35%;
+      display: inline-block;
+      @media screen and (max-width: 640px){
+        width: 100%;
+        margin-right: 30px;
+      }
+      .menu-footer-2-menu-container {
+        width: 82%;
+        margin-top: -11px;
+        @media screen and (max-width: 768px){
+          width: 100%;
+        }
+
+
+        #menu-footer-2-menu {
+          display: flex;
+          //flex-wrap: wrap;
+          margin-left: 0;
+          justify-content: space-between;
+          align-items: stretch;
+          margin-top: 42px;
+          @media screen and (max-width: 640px){
+            margin-top: 15px;
+            margin-left: 20px;
+          }
+          @media screen and (max-width: 414px){
+            margin-left: 15px;
+          }
+          li {
+            a {
+              font-family: $font-montserrat;
+              font-size: 12px;
+              font-weight: 400;
+              color: white!important;
+              @media screen and (max-width: 1080px){
+                font-size: 10px;
+              }
+              @media screen and (max-width: 560px){
+                font-size: 9px;
+              }
+            }
+          }
+        }
+      }
+      .container-form {
+        margin-top: 56px;
+        @media screen and (max-width: 640px){
+          margin-top: 0;
+          margin-left: 20px;
+          padding-bottom: 20px;
+        }
+        h1 {
+          font-family: $font-montserrat;
+          font-size: 12px;
+          font-weight: 400;
+          color: #fff;
+          letter-spacing: 1px;
+          @media screen and (max-width: 1080px){
+            font-size: 10px;
+          }
+          @media screen and (max-width: 560px){
+            font-size: 9px;
+          }
+        }
+        div {
+          margin-top: 25px;
+          @media screen and (max-width: 640px) {
+            padding-bottom: 10px;
+          }
+          input {
+            width: 66.3%;
+            background-color: #f5f5f5;
+            padding-top: 9px;
+            padding-bottom: 8px;
+            padding-left: 26px;
+            @media screen and (max-width: 768px){
+              padding-top: 5px;
+              padding-bottom: 5px;
+              &::placeholder {
+                font-size: 10px;
+              }
+            }
+            @media screen and (max-width: 640px) {
+              width: 74%;
+            }
+            @media screen and (max-width: 540px) {
+              width: 69%;
+            }
+          }
+          &::placeholder {
+            color: #8e8e8e;
+            font-family: $font-montserrat;
+            font-size: 12px;
+            font-weight: 400;
+            @media screen and (max-width: 1080px){
+              font-size: 10px;
+            }
+            @media screen and (max-width: 560px){
+              font-size: 9px;
+            }
+          }
+
+          button {
+            font-family: $font-montserrat;
+            font-size: 12px;
+            font-weight: 400;
+            color: #363636;
+            padding: 11px 48px;
+            border-radius: 0;
+            float: right;
+
+            @media screen and (max-width: 1350px){
+              padding: 11px 35px;
+            }
+            @media screen and (max-width: 1080px){
+              font-size: 10px;
+              padding: 13px 35px;
+            }
+            @media screen and (max-width: 992px){
+              padding: 13px 23px;
+            }
+            @media screen and (max-width: 768px){
+              padding: 9px 18px;
+            }
+            @media screen and (max-width: 640px){
+              padding: 10px 35px;
+              font-size: 9px;
+            }
+            @media screen and (max-width: 414px){
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
+
+    }
+    .footer-bottom-right {
+      width: 20%;
+      display: inline-block;
+      padding-left: 79px;
+      padding-top: 43px;
+      @media screen and (max-width: 1350px){
+        width: 30%;
+      }
+      @media screen and (max-width: 992px){
+        padding-left: 40px;
+        width: 40%;
+      }
+      @media screen and (max-width: 640px){
+        display: none;
+      }
+      h1 {
+        font-family: $font-montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        letter-spacing: 1px;
+        @media screen and (max-width: 1080px){
+          font-size: 10px;
+        }
+      }
+      div {
+        font-family: $font-montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        padding-top: 21px;
+        @media screen and (max-width: 1080px){
+          font-size: 10px;
+        }
+      }
+      .bank-cards {
+        padding-top: 38px;
+        display: flex;
+        justify-content: space-between;
+        width: 97%;
+
+        @media screen and (max-width: 1350px){
+          width: 76%;
+        }
+        @media screen and (max-width: 992px){
+          width: 90%;
+        }
+      }
+    }
+
+  }
+}
+
+//}

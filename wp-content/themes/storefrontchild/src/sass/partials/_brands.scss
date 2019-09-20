@@ -1,0 +1,95 @@
+.row-brands {
+  flex-direction: row;
+  padding: 0px;
+
+}
+
+.row-brands {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (max-width: 640px){
+    flex-direction: column;
+  }
+  &:first-child {
+    margin-left: 10px;
+  }
+  div {
+    flex-basis: 50%;
+    display: block;
+    padding-left: 87px;
+    @media screen and (max-width: 992px){
+      padding-left: 23px;
+    }
+    //@media screen and (max-width: 768px){
+    //  padding-left: 23px;
+    //}
+    @media screen and (max-width: 640px){
+      padding-left: 0;
+    }
+    h1 {
+      font-size: 50px;
+      font-family: $font-sans;
+      font-weight: 700;
+      @media screen and (max-width: 768px){
+        font-size: 40px;
+      }
+      @media screen and (max-width: 640px){
+        font-size: 35px;
+      }
+      @media screen and (max-width: 320px){
+        font-size: 29px;
+      }
+    }
+    div {
+      padding-left: 6px;
+      @media screen and (max-width: 640px){
+        padding-right: 6px;
+      }
+      h3 {
+        font-size: 27px;
+        font-family: $font-sans;
+        font-weight: 400;
+        letter-spacing: 0;
+        word-spacing: -3px;
+        @media screen and (max-width: 768px){
+          font-size: 24px;
+        }
+        @media screen and (max-width: 320px){
+          font-size: 17px;
+        }
+      }
+      p {
+        @media screen and (max-width: 768px){
+          font-size: 14px;
+        }
+        @media screen and (max-width: 320px){
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  div:first-child {
+    margin-top: -3px;
+    padding-right: 66px;
+    @media screen and (max-width: 768px){
+      margin-top: 25px;
+      padding-right: 0px;
+    }
+  }
+  .img_brand {
+    margin-top: 10px;
+    @media screen and (max-width: 640px){
+      margin-top: 0px;
+      padding-left: 15px;
+    }
+  }
+}
+.row-brands:first-child {
+  margin-left: -4px;
+  margin-top: -10px;
+  @media screen and (max-width: 640px){
+    margin-left: 0;
+  }
+}

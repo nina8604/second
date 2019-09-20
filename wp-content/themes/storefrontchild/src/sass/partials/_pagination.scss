@@ -1,0 +1,104 @@
+.woocommerce-pagination {
+  float: none!important;
+  padding: 0!important;
+  border: none;
+  .page-numbers {
+    font-size: 0;
+    border: 1px solid #d5d5d6;
+    li:first-child {
+      span {
+        float: left;
+      }
+    }
+    li:last-child {
+      span {
+        float: right;
+      }
+    }
+    li {
+      //width: auto;
+      @media screen and (max-width: 540px){
+        width: auto;
+      }
+      .prev.page-numbers {
+        color: white!important;
+        border: 1px solid #d5d5d6;
+        border-top: none;
+        border-bottom: none;
+        padding: 26px 18px 26px 32px!important;
+        @media screen and (max-width: 1200px){
+          padding: 16px 15px 15px 15px !important;
+        }
+        @media screen and (max-width: 540px){
+          float: left;
+        }
+        &:before {
+          content: '\f053';
+          font-family: "Font Awesome 5 Free";
+          font-size: 16px;
+          color: #232323;
+          padding-left: 3px;
+          &:hover {
+            color: $blue-dark;
+          }
+        }
+      }
+      .page-numbers {
+        font-family: $font-montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        color: #232323;
+        background-color: white!important;
+        border: 1px solid #d5d5d6!important;
+        border-top: none!important;
+        border-bottom: none!important;
+        padding: 27px 35px!important;
+        @media screen and (max-width: 1200px){
+          padding: 17px 26px!important;
+        }
+        &:hover {
+          color: $blue-dark;
+          outline: none;
+        }
+        &:active {
+          color: white;
+          background-color: $blue-dark;
+        }
+      }
+      .page-numbers.current {
+        color: $blue-dark!important;
+        //background-color: $blue-dark!important;
+        //border: 1px solid $blue-dark!important;
+      }
+      .next.page-numbers {
+        color: white!important;
+        border: 1px solid #d5d5d6;
+        border-top: none!important;
+        border-bottom: none!important;
+        padding: 26px 15px 26px 35px!important;
+        @media screen and (max-width: 1200px){
+          padding: 16px 15px 15px 15px !important;
+        }
+        @media screen and (max-width: 540px){
+          float: right;
+        }
+        &:before {
+          content: '\f054';
+          font-family: "Font Awesome 5 Free";
+          font-size: 16px;
+          color: #232323;
+          padding-right: 3px;
+          &:hover {
+            color: $blue-dark;
+          }
+        }
+      }
+      &:first-child {
+        float: left;
+      }
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/*
+Theme Name: storefrontchild
+Template: storefront
+Theme URI: https://woocommerce.com/storefrontchild/
+Description: Дочерняя тема для темы storefront
+Author: Nina
+Version: 1.0
+*/
+
+
+@import url("../storefront/style.css");
